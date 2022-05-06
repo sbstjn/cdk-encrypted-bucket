@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   name: 'encrypted-bucket',
   repositoryUrl: 'https://github.com/sbstjn/cdk-encrypted-bucket.git',
   description: 'A CDK construct for encrypted S3 Buckets',
+  docgen: true,
   // deps: [],                /* Runtime dependencies of this module. */
   // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
   // devDeps: [],             /* Build dependencies for this module. */
