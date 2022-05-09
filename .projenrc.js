@@ -19,6 +19,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
     module: 'encrypted_bucket',
   },
 
+  publishToNuget: {
+    dotNetNamespace: 'SBSTJN.AWS',
+    packageId: 'CDK.EncryptedBucket',
+  },
 });
 
 project.synth();
