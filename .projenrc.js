@@ -11,7 +11,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   description: 'A CDK construct for encrypted S3 Buckets',
   defaultReleaseBranch: 'main',
   release: true,
-  releaseToNpm: false,
+
+  releaseToNpm: true,
 });
 
 project.synth();
