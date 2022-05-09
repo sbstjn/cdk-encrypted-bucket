@@ -13,6 +13,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   release: true,
 
   releaseToNpm: true,
+
+  publishToPypi: {
+    distName: 'encrypted-bucket',
+    module: 'encrypted_bucket',
+  },
+
 });
 
 project.synth();
