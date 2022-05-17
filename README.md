@@ -1,14 +1,24 @@
-# Encrypted Buckets
+# CDK Construct: Encrypted S3 Buckets
 
 [![MIT License](https://badgen.now.sh/badge/License/MIT/blue)](https://github.com/sbstjn/cdk-encrypted-bucket/blob/master/LICENSE.md)
 [![superluminar.io](https://badgen.now.sh/badge/by/superluminar/red)](https://superluminar.io//2022/05/17/cdk-construct-mit-projen-erstellen-testen-und-für-npm-nuget-pypi-veröffentlichen/)
 
 
-> Example for a polyglot A CDK construct created with [jsii] and [projen] for encrypted S3 Buckets. 
+> Example for a polyglot CDK construct created with [jsii] and [projen] for encrypted S3 Buckets. 
 
 * [NPM Package][npm]
 * [NuGet Package][nuget]
 * [PyPi Package][pypi]
+
+## Usage
+
+```ts
+import { EncryptedBucket } from 'encrypted-buckets';
+
+new EncryptedBucket(stack, 'EncryptedBucket', {
+  versioned: true,
+});
+```
 
 ## Further Reading
 
